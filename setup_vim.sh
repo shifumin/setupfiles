@@ -25,3 +25,6 @@ sudo make
 sudo make install
 
 sudo ln -s /opt/vim/bin/vim /usr/local/bin/
+
+# install NeoBundle
+[ ! -d ~/.vim/bundle ] && mkdir -p ~/.vim/bundle && git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim && echo "you should run following command to setup plugins ->  vim -c ':NeoBundleInstall'"
