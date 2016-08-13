@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GIT_VER="2.9.2"
-TIG_VER="2.1.1"
+GIT_VER="2.9.3"
+TIG_VER="2.2"
 
 # Git
 sudo yum -y remove git
@@ -18,6 +18,8 @@ cd /usr/local/src/git-${GIT_VER}
 # diff-highlight
 # CentOS
 sudo ln -s /usr/local/src/git-${GIT_VER}/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
+# Mac
+# ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin
 # Ubuntu
 # sudo chmod 755 /usr/share/doc/git/contrib/diff-highlight/diff-highlight
 # sudo ln -s /usr/local/src/git-${GIT_VER}/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
