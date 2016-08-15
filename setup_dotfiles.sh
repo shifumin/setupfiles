@@ -4,7 +4,7 @@
 DOT_FILES=( ansible.cfg .ctags .gemrc .gitconfig .gitignore .gitmessage.txt .pryrc .rubocop.yml .tigrc .tmux.conf .vimrc .vimrc.neobundle .zshrc .zshrc.custom )
 for file in ${DOT_FILES[@]}
 do
-    ln -s $HOME/.ghq/github.com/shifumin/dotfiles/$file $HOME/$file
+    ln -s $HOME/dotfiles/$file $HOME/$file
 done
 
 # install bin for tmux
