@@ -32,3 +32,6 @@ cd /usr/local/src
 cd /usr/local/src/tig-${TIG_VER}
 [ ! -e /usr/local/bin/tig ] && sudo ./configure --prefix=/usr/local/
 [ ! -e /usr/local/bin/tig ] && sudo make && sudo make install
+
+# hub
+curl http://hub.github.com/standalone -sLo ~/bin/hub && chmod +x ~/bin/hub
