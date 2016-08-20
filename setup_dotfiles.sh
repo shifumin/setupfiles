@@ -16,8 +16,8 @@ done
 
 # install .vim/indent/**.vim
 [ ! -d ~/.vim/indent ] && mkdir ~/.vim/indent
-ln -s $HOME/dotfiles/ruby.vim $HOME/.vim/indent/ruby.vim
-ln -s $HOME/dotfiles/php.vim $HOME/.vim/indent/php.vim
+ln -s $HOME/dotfiles/.vim/indent/ruby.vim $HOME/.vim/indent/ruby.vim
+ln -s $HOME/dotfiles/.vim/indent/php.vim $HOME/.vim/indent/php.vim
 
-# install .vim/ftdetect/smarty.vim
-[ ! -d ~/.vim/syntax ] && mkdir ~/.vim/syntax && ln -s $HOME/dotfiles/smarty.vim $HOME/.vim/syntax/smarty.vim
+# install .vim/syntax/smarty.vim
+[ ! -d ~/.vim/syntax ] && mkdir ~/.vim/syntax && ln -s $HOME/dotfiles/.vim/syntax/smarty.vim $HOME/.vim/syntax/smarty.vim
