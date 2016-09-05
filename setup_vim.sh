@@ -1,18 +1,7 @@
 #!/bin/bash
 
-RUBY_VER="2.3.1"
-
 sudo yum remove -y vim-common vim-enhanced
 sudo yum install -y mercurial lua-devel ncurses-devel readline-devel python-devel
-
-git clone git@github.com:sstephenson/rbenv.git ~/.rbenv
-git clone git@github.com:sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install ${RUBY_VER}
-rbenv rehash
-rbenv global ${RUBY_VER}
-
-# hub実行用のシンボリックリンク
-sudo ln -s ~/.rbenv/shims/ruby /usr/bin/ruby
 
 cd /usr/local/src
 sudo hg clone https://bitbucket.org/vim-mirror/vim
