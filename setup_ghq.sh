@@ -17,8 +17,8 @@ touch .gitconfig
 echo [ghq] >> .gitconfig
 echo "    root = ~/.ghq" >> .gitconfig
 
-ghq get shifumin/dotfiles
-ghq get shifumin/setupfiles
+ghq get -p shifumin/dotfiles
+ghq get -p shifumin/setupfiles
 rm -f $HOME/.gitconfig
 
 ln -s $HOME/.ghq/github.com/shifumin/dotfiles/ $HOME/dotfiles
