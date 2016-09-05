@@ -11,6 +11,9 @@ rbenv install ${RUBY_VER}
 rbenv rehash
 rbenv global ${RUBY_VER}
 
+# hub実行用のシンボリックリンク
+sudo ln -s ~/.rbenv/shims/ruby /usr/bin/ruby
+
 cd /usr/local/src
 sudo hg clone https://bitbucket.org/vim-mirror/vim
 cd vim

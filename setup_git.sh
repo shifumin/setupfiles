@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_VER="2.9.3"
+GIT_VER="2.10.0"
 TIG_VER="2.2"
 
 # Git
@@ -34,4 +34,5 @@ cd /usr/local/src/tig-${TIG_VER}
 [ ! -e /usr/local/bin/tig ] && sudo make && sudo make install
 
 # hub
+[ ! -e ~/bin ] && mkdir ~/bin
 curl http://hub.github.com/standalone -sLo ~/bin/hub && chmod +x ~/bin/hub
