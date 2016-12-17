@@ -28,3 +28,6 @@ gem install tmuxinator
 [ ! -d $HOME/.bin ] && mkdir $HOME/.bin
 curl -fsSL https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o $HOME/.bin/tmuxinator.zsh
 source $HOME/.bin/tmuxinator.zsh
+
+# tmuxinator setting
+ln -s $HOME/dotfiles/.tmuxinator $HOME/.tmuxinator
