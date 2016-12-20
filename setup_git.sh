@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GIT_VER="2.10.0"
-TIG_VER="2.2"
+GIT_VER="2.14.1"
+TIG_VER="2.2.2"
 
 # Git
 # TODO: Ubuntu用を作成する
@@ -32,7 +32,7 @@ sudo ln -s /usr/local/src/git-${GIT_VER}/contrib/diff-highlight/diff-highlight /
 
 # Tig
 cd /usr/local/src
-[ ! -e /usr/local/src/tig-${TIG_VER}.tar.gz ] && sudo wget http://jonas.nitro.dk/tig/releases/tig-${TIG_VER}.tar.gz
+[ ! -e /usr/local/src/tig-${TIG_VER}.tar.gz ] && sudo wget https://github.com/jonas/tig/releases/download/tig-${TIG_VER}/tig-${TIG_VER}.tar.gz
 [ ! -e /usr/local/src/tig-${TIG_VER} ] && sudo tar zxvf tig-${TIG_VER}.tar.gz
 
 cd /usr/local/src/tig-${TIG_VER}

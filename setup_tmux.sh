@@ -1,7 +1,7 @@
 #!/bin/bash
 
-LIBEVENT_VER="2.0.22"
-TMUX_VER="2.2"
+LIBEVENT_VER="2.1.8"
+TMUX_VER="2.5"
 
 # libevent
 cd /usr/local/src

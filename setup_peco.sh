@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # # peco
-# PECO_VER="0.4.7"
+# PECO_VER="0.5.1"
 #
 # cd /usr/local/src
 #

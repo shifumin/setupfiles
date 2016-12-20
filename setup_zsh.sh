@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ZSH_VER="5.2"
-RIPGREP_VER="0.5.2"
+ZSH_VER="5.4.1"
+RIPGREP_VER="0.6.0"
 
 sudo yum install -y ncurses-devel
 
