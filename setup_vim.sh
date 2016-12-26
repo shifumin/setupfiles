@@ -27,3 +27,7 @@ mkdir -p $HOME/.vim/vim-ref/cache
 cd /tmp
 wget http://jp2.php.net/get/php_manual_ja.tar.gz/from/this/mirror -O php_manual_ja.tar.gz
 tar -zxvf php_manual_ja.tar.gz -C $HOME/.vim/vim-ref
+
+# setup for refe2
+gem install refe2
+bitclust setup
