@@ -16,6 +16,7 @@ done
 
 # install $HOME/.vim/indent/*.vim
 [ ! -d $HOME/.vim/indent ] && mkdir -p $HOME/.vim/indent
+ln -s $HOME/dotfiles/.vim/indent/javascript.vim $HOME/.vim/indent/
 ln -s $HOME/dotfiles/.vim/indent/ruby.vim $HOME/.vim/indent/
 ln -s $HOME/dotfiles/.vim/indent/php.vim $HOME/.vim/indent/
 
