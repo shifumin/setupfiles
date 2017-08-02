@@ -14,14 +14,14 @@ do
     ln -s $HOME/dotfiles/$file /usr/local/bin/
 done
 
-# install $HOME/.vim/indent/*.vim
-[ ! -d $HOME/.vim/indent ] && mkdir -p $HOME/.vim/indent
-ln -s $HOME/dotfiles/.vim/indent/javascript.vim $HOME/.vim/indent/
-ln -s $HOME/dotfiles/.vim/indent/ruby.vim $HOME/.vim/indent/
-ln -s $HOME/dotfiles/.vim/indent/php.vim $HOME/.vim/indent/
-
-# install $HOME/.vim/syntax/smarty.vim
-[ ! -d $HOME/.vim/syntax ] && mkdir -p $HOME/.vim/syntax && ln -s $HOME/dotfiles/.vim/syntax/smarty.vim $HOME/.vim/syntax/
-
 # install $HOME/.vim/after/plugin/common-settings.vim
 [ ! -d $HOME/.vim/after/plugin ] && mkdir -p $HOME/.vim/after/plugin && ln -s $HOME/dotfiles/.vim/after/plugin/common-settings.vim $HOME/.vim/after/plugin/
+
+# setup Neovim settings
+[ ! -d ~/.config/nvim ] && mkdir -p ~/.config/nvim
+
+NEOVIM_FILES=( dein.toml deinlazy.toml init.vim mapping.vim options.vim plugins.vim )
+for file in ${NEOVIM_FILES[@]}
+do
+    ln -s $HOME/dotfiles/nvim/$file $HOME/.config/nvim/
+done
