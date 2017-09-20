@@ -4,8 +4,13 @@ GIT_VER="2.10.0"
 TIG_VER="2.2"
 
 # Git
+# TODO: Ubuntu用を作成する
+# sudo apt-get install -y gettext
+
 sudo yum -y remove git
 sudo yum install -y gcc curl-devel expat-devel gettext-devel ncurses-devel openssl-devel zlib-devel perl-ExtUtils-MakeMaker
+# Ubuntu
+# sudo apt-get install -y libcurl4-openssl-dev
 
 cd /usr/local/src
 [ ! -e /usr/local/src/git-${GIT_VER}.tar.gz ] && sudo wget https://www.kernel.org/pub/software/scm/git/git-${GIT_VER}.tar.gz
@@ -19,10 +24,11 @@ cd /usr/local/src/git-${GIT_VER}
 # CentOS
 sudo ln -s /usr/local/src/git-${GIT_VER}/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 # Mac
-# ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin
+# ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/
 # Ubuntu
-# sudo chmod 755 /usr/share/doc/git/contrib/diff-highlight/diff-highlight
-# sudo ln -s /usr/local/src/git-${GIT_VER}/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
+# curl https://raw.github.com/git/git/master/contrib/diff-highlight/diff-highlight -o diff-highlight
+# chmod +x diff-highlight
+# sudo mv diff-highlight /usr/local/bin/diff-highlight
 
 # Tig
 cd /usr/local/src
