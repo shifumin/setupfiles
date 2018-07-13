@@ -26,9 +26,9 @@ sudo ln -s /usr/local/src/git-${GIT_VER}/contrib/diff-highlight/diff-highlight /
 # Mac
 # ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/
 # Ubuntu
-# curl https://raw.github.com/git/git/master/contrib/diff-highlight/diff-highlight -o diff-highlight
-# chmod +x diff-highlight
-# sudo mv diff-highlight /usr/local/bin/diff-highlight
+# cd /usr/local/src/git-${GIT_VER}/contrib/diff-highlight
+# sudo make
+# sudo cp /usr/local/src/git/contrib/diff-highlight/diff-highlight /usr/local/bin/
 
 # Tig
 cd /usr/local/src
