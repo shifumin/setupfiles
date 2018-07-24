@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GIT_VER="2.18.0"
-TIG_VER="2.3.3"
+TIG_VER="2.4.0"
 
 # Git
 # TODO: Ubuntu用を作成する
